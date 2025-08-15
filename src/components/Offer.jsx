@@ -14,6 +14,10 @@ export function Offer() {
         <img />
         <p>Zabezpieczenie Twoich oszczędności</p>
       </div>
+      <div>
+        <img />
+        <p>Oprogramowanie dostosowane do Twoich potrzeb</p>
+      </div>
     </div>
   );
 }
