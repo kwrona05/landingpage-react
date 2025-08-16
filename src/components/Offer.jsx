@@ -1,4 +1,4 @@
-export function Offer() {
+export default function Offer() {
   return (
     <div>
       <h2>Oferta</h2>
