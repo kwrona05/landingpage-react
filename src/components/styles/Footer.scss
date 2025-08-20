@@ -1,0 +1,31 @@
+// src/components/Footer.scss
+
+$primary-color: #00c2ff; // PRU accent
+$secondary-color: #f5f5f5; // jasny tekst
+$accent-color: #004aad;
+$bg-color: #0f172a; // ciemne tło
+$font-primary: 'Inter', sans-serif;
+
+.footer {
+  background-color: $bg-color;
+  color: $secondary-color;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: $font-primary;
+
+  p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $accent-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
