@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
+import "./styles/Contact.scss";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -11,11 +12,14 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await addDoc(collection(db, "subscribers"), { email });
+      await addDoc(collection(db, "subscribers"), { name, email, phone });
       setStatus("Dziękuję za zapisanie do newslettera!");
       setEmail("");
+      setName("");
+      setPhone("");
     } catch (err) {
       setStatus("Wystąpił błąd. Spróbuj ponownie później.");
+      console.error(err);
     }
   };
 
@@ -42,7 +46,7 @@ export default function Contact() {
           className="input"
         />
         <input
-          type="number"
+          type="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="Twój numer telefonu"
