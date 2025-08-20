@@ -1,0 +1,63 @@
+// src/components/About.scss
+
+$primary-color: #004aad; // PRU accent
+$secondary-color: #0f172a; // ciemne tło
+$accent-color: #00c2ff; // dodatkowy akcent
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Roboto Mono', monospace;
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #f5f6fa; // jasne tło kontrastujące z Header
+  color: $secondary-color;
+
+  .about-content {
+    max-width: 800px;
+    text-align: left;
+
+    h2 {
+      font-family: $font-secondary;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $primary-color;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-family: $font-primary;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+
+      a {
+        color: $accent-color;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// Responsywność
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1rem;
+
+    .about-content {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
