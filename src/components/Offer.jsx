@@ -12,7 +12,7 @@ export default function Offer() {
         </div>
         <div>
           <img src="/printing.png" alt="Konsultacje i doradztwo" />
-          <p>Konsultacje i doradztwo</p>
+          <p>Technologia NFC i nagrody na eventy</p>
         </div>
         <div>
           <img src="/money.png" alt="Zabezpieczenie oszczędności" />
