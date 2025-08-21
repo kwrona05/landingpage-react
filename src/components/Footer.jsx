@@ -11,7 +11,7 @@ export default function Footer() {
       <p>
         LinkedIn:{" "}
         <a
-          href="https://www.linkedin.com/in/aimexa-kacper-wrona/"
+          href="https://www.linkedin.com/company/aimexa-kacper-wrona"
           target="_blank"
           rel="noopener noreferrer"
         >
