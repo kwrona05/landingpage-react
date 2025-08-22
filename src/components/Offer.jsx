@@ -8,15 +8,15 @@ export default function Offer() {
       <div className="offer-grid">
         <div>
           <img src="/ubezpieczenie.png" alt="Ubezpieczenia" />
-          <p>Ubezpieczenia</p>
+          <p>Ubezpieczenia na zycie i dozycie</p>
+        </div>
+        <div>
+          <img src="/money.png" alt="Zabezpieczenie oszczędności" />
+          <p>Oszczędności i inwestycje</p>
         </div>
         <div>
           <img src="/printing.png" alt="Konsultacje i doradztwo" />
           <p>Technologia NFC i nagrody na eventy</p>
-        </div>
-        <div>
-          <img src="/money.png" alt="Zabezpieczenie oszczędności" />
-          <p>Zabezpieczenie Twoich oszczędności</p>
         </div>
         <div>
           <img src="/websites.png" alt="Oprogramowanie" />

@@ -21,7 +21,7 @@ export default function Footer() {
       <p>
         Instagram:{" "}
         <a
-          href="https://www.instagram.com/kacperwrona_aimexa/"
+          href="https://www.instagram.com/kacper_wrona_aimexa/"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -60,7 +60,6 @@ $font-secondary: 'Roboto Mono', monospace;
       color: $secondary-color;
     }
   }
-}
 
 // Responsywność
 @media (max-width: 768px) {
@@ -82,4 +81,72 @@ $font-secondary: 'Roboto Mono', monospace;
       width: 100%;
     }
   }
+}
+  }
+
+  .landing-form-overlay {
+  position: fixed;
+  inset: 0; // top:0; right:0; bottom:0; left:0
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; // ponad headerem
+
+  .landing-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+
+    h1 {
+      margin-bottom: 1.5rem;
+      font-family: $font-secondary;
+      color: $primary-color;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .input {
+        padding: 0.8rem 1rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+      }
+
+      button[type="submit"] {
+        background: $primary-color;
+        color: white;
+        padding: 0.8rem 1rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background: $accent-color;
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .close-btn {
+      margin-top: 1rem;
+      background: transparent;
+      border: none;
+      color: $secondary-color;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
