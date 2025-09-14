@@ -13,7 +13,7 @@ export default function Contact() {
     e.preventDefault();
     try {
       await addDoc(collection(db, "subscribers"), { name, email, phone });
-      setStatus("Dziękuję za zapisanie do newslettera!");
+      setStatus("Do usłyszenia! Skontaktuję się z Tobą w ciągu 24h.");
       setEmail("");
       setName("");
       setPhone("");
@@ -25,9 +25,7 @@ export default function Contact() {
 
   return (
     <div className="landing-form">
-      <h1>
-        Zapisz się do newslettera i dowiedz się jak zadbać o swoje finanse
-      </h1>
+      <h1>Umów się na bezpłatną konsultację i sprawdź ile możesz zyskać!</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -53,7 +51,7 @@ export default function Contact() {
           required
           className="input"
         />
-        <button type="submit">Zapisz się do newslettera</button>
+        <button type="submit">Umów się na bezpłatną konsultację</button>
       </form>
       {status && <p>{status}</p>}
     </div>
