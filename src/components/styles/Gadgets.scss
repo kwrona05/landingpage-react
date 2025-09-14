@@ -1,0 +1,102 @@
+$primary-color: #004aad; // PRU accent
+$secondary-color: #0f172a; // ciemne nagłówki
+$accent-color: #00c2ff; // dodatkowy akcent
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Roboto Mono', monospace;
+
+.portfolio-gadgets {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  color: $secondary-color;
+  font-family: $font-primary;
+
+  h2 {
+    font-family: $font-secondary;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .gadgets-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .gadget-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: #f9f9f9;
+    border-left: 6px solid $primary-color;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .gadget-content {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-family: $font-secondary;
+        font-size: 1.5rem;
+        color: $primary-color;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .back-button {
+    display: block;
+    margin: 3rem auto 0;
+    padding: 0.75rem 2rem;
+    background-color: $primary-color;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: $font-primary;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background-color: $accent-color;
+      transform: scale(1.05);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .gadget-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      img {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
