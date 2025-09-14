@@ -7,20 +7,21 @@ export default function About() {
       <div className="about-content">
         <h2>O mnie</h2>
         <p>
-          Jestem właścicielem firmy Aimexa oraz specjalistą ds. planowania
-          finansowego w <a href="https://www.pru.pl">PRU</a>. Łączę
-          doświadczenie w doradztwie finansowym z pasją do nowoczesnych
-          technologii, wspierając zarówno firmy, jak i klientów indywidualnych w
-          osiąganiu ich celów. Od ponad 2 lat tworzę strony internetowe oraz
-          dedykowane rozwiązania programistyczne, które usprawniają działanie
-          organizacji i instytucji. Zrealizowałem m.in. projekt strony hufca{" "}
-          <a href="https://www.zhpjg.pl">ZHP</a>
-          oraz aplikację desktopową do zarządzania zastępstwami nauczycieli dla
-          Szkoły Podstawowej nr 5 w Jeleniej Górze, zwiększając efektywność
-          pracy kadry i ułatwiając komunikację w placówce. Moje doświadczenie w
-          prowadzeniu firmy, doradztwie finansowym i realizacji projektów IT
-          pozwala mi oferować klientom kompleksowe wsparcie, łączące wiedzę
-          biznesową z praktycznymi rozwiązaniami technologicznymi
+          Jestem właścicielem firmy Aimexa, w której wspieram zarówno
+          przedsiębiorstwa, jak i klientów indywidualnych w realizacji ich
+          celów. Od ponad dwóch lat tworzę strony internetowe oraz dedykowane
+          rozwiązania programistyczne, usprawniające funkcjonowanie organizacji
+          i instytucji. Wśród moich realizacji znajduje się m.in. projekt strony
+          internetowej hufca <a href="https://zhpjgag.pl">ZHP </a>oraz aplikacja
+          desktopowa do zarządzania zastępstwami nauczycieli, wdrożona w Szkole
+          Podstawowej nr 5 w Jeleniej Górze. Dzięki niej kadra pedagogiczna
+          pracuje efektywniej, a komunikacja w placówce stała się prostsza i
+          bardziej przejrzysta. Dodatkowo pomagam klientom optymalizować koszty
+          hostingu i utrzymania serwera, tak aby ich rozwiązania były nie tylko
+          funkcjonalne, ale też ekonomiczne. Doświadczenie zdobyte w prowadzeniu
+          własnej firmy oraz realizacji projektów IT pozwala mi oferować
+          klientom kompleksowe wsparcie, łączące wiedzę biznesową z praktycznymi
+          rozwiązaniami technologicznymi.
         </p>
       </div>
     </div>
