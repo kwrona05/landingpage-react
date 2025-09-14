@@ -33,14 +33,16 @@ export default function Header() {
           <h2>Aimexa - Kacper Wrona</h2>
         </div>
         <h1>Technologia wspierająca Twój biznes i finanse</h1>
-        <button onClick={() => setShowForm(true)}>Umów konsultację</button>
+        <button onClick={() => setShowForm(true)}>
+          Umów się na konsultację
+        </button>
       </div>
 
       {/* FORMULARZ JAKO OVERLAY */}
       {showForm && (
         <div className="landing-form-overlay">
           <div className="landing-form">
-            <h1>Zapisz się do newslettera</h1>
+            <h1>Umów się na konsultację</h1>
             <form onSubmit={handleSubmit}>
               <input
                 type="email"
